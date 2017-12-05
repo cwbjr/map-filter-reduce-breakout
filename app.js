@@ -174,7 +174,20 @@ const spells = [{
 
 // MAP
 
+function cleanUpSPells(spell) {
+	var cleanSpells = spells.map((spell) => {
 
+		var cleanSpell = {
+			name: spell.name,
+			description: spell.desc,
+			duration: spell.duration
+		}
+		console.log(cleanSpell);
+		return cleanSpell;
+
+
+	})
+}
 
 // FILTER
 
