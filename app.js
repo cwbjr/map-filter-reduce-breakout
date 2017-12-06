@@ -190,7 +190,14 @@ function cleanUpSPells(spell) {
 }
 
 // FILTER
-
+function filterSpellLevel(spells) {
+	var lowLevelSpell = spells.filter((spell, index, array) => {
+		if(spell.level <= 1) {
+			return spell;
+		}
+	})
+	return lowLevelSpell;
+}
 
 
 // REDUCE
