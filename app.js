@@ -201,3 +201,23 @@ function filterSpellLevel(spells) {
 
 
 // REDUCE
+// function sumSpellLevel(spells) {
+// 	var level = spells.reduce((accumulator, spell) => {
+// 		accumulator += spell.level
+// 		return accumulator
+// 	}, 0)
+// 	return level;
+// }
+
+// sumSpellLevel(spells);
+
+function spellNames(spells) {
+	return spells.reduce((nameArr, aSpell) => {
+		nameArr.push(aSpell.name)
+		return nameArr
+		}, [])
+
+}
+
+
+console.log(spellNames(spells));
